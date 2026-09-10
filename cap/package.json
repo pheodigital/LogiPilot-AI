@@ -1,0 +1,27 @@
+{
+  "name": "logipilot-cap",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@cap-js/sqlite": "^3.0.2",
+    "@sap/cds": "^10.0.6",
+    "better-sqlite3": "^12"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^9"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db.sqlite"
+        }
+      }
+    }
+  }
+}
